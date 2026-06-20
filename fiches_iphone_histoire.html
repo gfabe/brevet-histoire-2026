@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Hist-Géo Brevet">
+<meta name="theme-color" content="#0f172a">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="apple-touch-icon.png">
+<title>Histoire-Géo Brevet 2026 — Fiches</title>
+<style>
+  :root{ --bleu:#3b82f6; --vert:#10b981; --orange:#f97316; --violet:#a855f7; --rose:#ec4899; --rouge:#f43f5e; --air:#f59e0b;
+    --bg:#0f172a; --card:#1e293b; --card2:#273449; --txt:#e2e8f0; --mut:#94a3b8; --line:#334155;}
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+  html{ -webkit-text-size-adjust:100%;}
+  body{ margin:0; background:radial-gradient(circle at 100% -5%, rgba(245,158,11,.20), transparent 40%),
+      radial-gradient(circle at 0% 8%, rgba(220,38,38,.20), transparent 38%), var(--bg);
+    color:var(--txt); font-family:-apple-system,"SF Pro Text","Inter",system-ui,sans-serif; font-size:16px; line-height:1.5; padding:0 0 calc(40px + env(safe-area-inset-bottom));}
+  #install{ position:sticky; top:0; z-index:30; display:flex; align-items:center; gap:11px; background:linear-gradient(120deg,#b45309,#dc2626); color:#fff; padding:11px 14px; padding-top:calc(11px + env(safe-area-inset-top)); box-shadow:0 4px 14px rgba(0,0,0,.35);}
+  #install .ic{ width:34px;height:34px;border-radius:9px;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:18px;flex:0 0 auto;}
+  #install .tx{ font-size:13px; line-height:1.35;} #install .tx b{ font-weight:800;}
+  #install .x{ margin-left:auto; flex:0 0 auto; width:26px;height:26px;border-radius:50%; background:rgba(255,255,255,.22); border:none; color:#fff; font-size:15px; cursor:pointer;}
+  header{ position:sticky; top:0; z-index:20; backdrop-filter:saturate(180%) blur(14px); background:rgba(15,23,42,.78); border-bottom:1px solid var(--line); padding:calc(10px + env(safe-area-inset-top)) 16px 8px;}
+  header .ttl{ font-size:18px; font-weight:800; letter-spacing:-.3px;} header .ttl b{ background:linear-gradient(90deg,#fbbf24,#f87171); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  header .sub{ font-size:12px; color:var(--mut);}
+  nav{ display:flex; gap:7px; overflow-x:auto; padding:9px 0 2px; scrollbar-width:none;} nav::-webkit-scrollbar{ display:none;}
+  nav a{ flex:0 0 auto; font-size:12.5px; font-weight:600; text-decoration:none; color:var(--txt); background:var(--card2); border:1px solid var(--line); padding:6px 12px; border-radius:999px; white-space:nowrap;}
+  .hero{ padding:18px 16px 6px; display:flex; gap:14px; align-items:center;}
+  .hero img{ width:84px;height:120px;object-fit:cover;border-radius:14px;border:2px solid rgba(245,158,11,.6); box-shadow:0 8px 22px rgba(0,0,0,.45); flex:0 0 auto;}
+  .hero h1{ font-size:25px; margin:0; font-weight:800; letter-spacing:-.8px;} .hero h1 b{ background:linear-gradient(120deg,#fbbf24,#fb923c,#f87171); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .hero .y{ font-size:12.5px; color:var(--mut); margin-top:3px;}
+  .hero .tag{ display:inline-block; margin-top:7px; font-size:11px; background:rgba(245,158,11,.18); color:#fcd34d; border:1px solid rgba(245,158,11,.4); padding:3px 9px; border-radius:8px; font-weight:600;}
+  .dl{ display:flex; gap:9px; padding:4px 16px 0;}
+  .dl a{ flex:1; display:flex; align-items:center; gap:9px; text-decoration:none; color:var(--txt); background:linear-gradient(135deg,#b45309,#f59e0b); border-radius:13px; padding:11px 13px; font-weight:700; font-size:13.5px; box-shadow:0 6px 16px rgba(180,83,9,.35);}
+  .dl a .di{ font-size:19px;} .dl a small{ display:block; font-weight:500; font-size:11px; opacity:.92;}
+  main{ padding:8px 12px;}
+  details{ background:var(--card); border:1px solid var(--line); border-radius:16px; margin:11px 0; overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,.25);}
+  summary{ list-style:none; cursor:pointer; padding:15px 16px; display:flex; align-items:center; gap:12px; font-size:16px; font-weight:700;}
+  summary::-webkit-details-marker{ display:none;}
+  summary .ico{ width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:17px;flex:0 0 auto;color:#fff;}
+  summary .cv{ margin-left:auto; color:var(--mut); font-size:13px; transition:transform .2s;} details[open] summary .cv{ transform:rotate(90deg);}
+  .sec{ padding:2px 16px 16px;}
+  .s-rouge .ico{background:linear-gradient(135deg,#b91c1c,#ef4444);} .s-violet .ico{background:linear-gradient(135deg,#7c3aed,#a855f7);}
+  .s-bleu .ico{background:linear-gradient(135deg,#2563eb,#3b82f6);} .s-vert .ico{background:linear-gradient(135deg,#059669,#10b981);}
+  .s-orange .ico{background:linear-gradient(135deg,#ea580c,#f97316);} .s-rose .ico{background:linear-gradient(135deg,#db2777,#ec4899);}
+  .s-cyan .ico{background:linear-gradient(135deg,#0891b2,#22d3ee);} .s-air .ico{background:linear-gradient(135deg,#b45309,#f59e0b);}
+  h3.blk{ font-size:14px; margin:16px 0 6px; color:#fff; display:flex; align-items:center; gap:7px;} h3.blk:first-child{ margin-top:4px;} h3.blk .dot{ width:8px;height:8px;border-radius:50%; background:var(--rouge);}
+  ul{ margin:6px 0; padding-left:20px;} li{ margin:3px 0;} p{ margin:6px 0;} i{color:#cbd5e1;}
+  .date{ display:inline-block; background:rgba(245,158,11,.18); color:#fcd34d; border:1px solid rgba(245,158,11,.4); border-radius:6px; padding:0 6px; font-weight:700; font-size:13px;}
+  .def{ background:linear-gradient(180deg,rgba(59,130,246,.16),rgba(168,85,247,.12)); border:1px solid #3b4a66; border-radius:11px; padding:9px 12px; margin:8px 0; font-size:14px; color:#dbeafe;}
+  .ex{ background:var(--card2); border-left:3px solid var(--bleu); border-radius:9px; padding:7px 11px; margin:7px 0; font-size:13.5px;} .ex b{ color:#93c5fd;}
+  .ok{ background:rgba(16,185,129,.13); border-left:3px solid var(--vert); border-radius:9px; padding:7px 11px; margin:7px 0; font-size:13px; color:#a7f3d0;}
+  table{ border-collapse:collapse; width:100%; font-size:13px; margin:8px 0;} td,th{ border:1px solid var(--line); padding:5px 8px; text-align:left;} th{ background:var(--card2); color:#dbeafe; text-align:center;}
+  .day{ display:flex; gap:11px; margin:10px 0; align-items:stretch;}
+  .day .pin{ flex:0 0 64px; border-radius:12px; color:#fff; display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:800; text-align:center; padding:8px 4px;}
+  .day .pin .big{ font-size:17px;} .day .pin .sm{ font-size:9.5px; opacity:.9;}
+  .day .dc{ flex:1; background:var(--card2); border:1px solid var(--line); border-radius:12px; padding:9px 12px;} .day .dc b{ font-size:14px;} .day .dc .meta{ font-size:11.5px; color:var(--mut);}
+  .pin.j1{background:linear-gradient(135deg,#2563eb,#3b82f6);} .pin.j2{background:linear-gradient(135deg,#7c3aed,#a855f7);} .pin.j3{background:linear-gradient(135deg,#059669,#10b981);} .pin.j4{background:linear-gradient(135deg,#ea580c,#f97316);} .pin.j5{background:linear-gradient(135deg,#db2777,#ec4899);} .pin.jd{background:linear-gradient(135deg,#dc2626,#f43f5e);}
+  .q{ background:var(--card2); border:1px solid var(--line); border-radius:12px; padding:11px 13px; margin:9px 0;} .q .qq{ font-weight:700; font-size:14.5px; margin-bottom:5px;}
+  .q .qn{ display:inline-flex; width:21px;height:21px;border-radius:50%;background:var(--violet);color:#fff; font-size:12px;align-items:center;justify-content:center;margin-right:7px;font-weight:700;}
+  .q label{ display:block; padding:9px 12px; margin:5px 0; border:1px solid var(--line); border-radius:10px; font-size:14px;} .q input{ accent-color:var(--vert); margin-right:8px; transform:scale(1.15);}
+  .q label:has(input:checked){ background:rgba(16,185,129,.13); border-color:var(--vert);}
+  .reveal summary{ padding:10px 0; font-size:14px; color:#fbbf24;} .corr{ background:linear-gradient(120deg,#064e3b,#065f46); border-radius:12px; padding:11px 14px; color:#fff; font-size:13.5px;}
+  footer{ text-align:center; color:var(--mut); font-size:12px; padding:24px 16px;} footer b{color:#fcd34d;} a.top{ color:var(--bleu); text-decoration:none;}
+</style>
+</head>
+<body>
+
+<div id="install"><span class="ic">📲</span><span class="tx">Installe-moi comme une appli&nbsp;: touche <b>Partager</b> ⬆️ puis <b>« Sur l'écran d'accueil »</b></span>
+  <button class="x" onclick="document.getElementById('install').style.display='none'" aria-label="Fermer">✕</button></div>
+
+<header>
+  <div class="ttl">Histoire-Géo <b>Brevet</b> 2026</div>
+  <div class="sub">Fiches de révision · #AIRHEAD4LIFE 🦸</div>
+  <nav><a href="#m1">1914-18</a><a href="#m2">Totalitarismes</a><a href="#m3">1939-45</a><a href="#m4">Guerre froide</a><a href="#m5">Vᵉ Rép.</a><a href="#m6">Géo urbain</a><a href="#m7">Géo monde</a><a href="#m8">EMC</a><a href="#mm">Méthodes</a><a href="#mp">Planning</a><a href="#mq">QCM</a></nav>
+</header>
+
+<div class="hero">
+  <img src="airhead-portrait.jpg" alt="The Airhead">
+  <div><h1>Tes repères,<br><b>au point</b> 🦸</h1><div class="y">Histoire · Géographie · EMC</div><span class="tag">Coaché par The Airhead</span></div>
+</div>
+
+<div class="dl">
+  <a href="Fiches_revision_histoire_geo_Brevet_2026.pdf" download><span class="di">📙</span><span>Fiches PDF<small>12 pages · à imprimer</small></span></a>
+  <a href="Antiseche_histoire_geo_Brevet_2026.pdf" download><span class="di">⚡</span><span>Antisèche<small>2 p · recto-verso</small></span></a>
+</div>
+
+<main>
+
+<details id="m1" class="s-rouge" open><summary><span class="ico">1</span>1914-18 : Première Guerre mondiale<span class="cv">›</span></summary><div class="sec">
+  <ul><li><span class="date">1914</span> début · <span class="date">1916</span> Verdun (tranchées)</li><li><span class="date">1917</span> Révolution russe + entrée des USA</li><li><span class="date">11 nov. 1918</span> armistice · <span class="date">1919</span> traité de Versailles</li></ul>
+  <div class="def">Une <b>guerre totale</b> : soldats, civils, économie et propagande sont mobilisés.</div>
+  <p>Violences de masse : ≈ 10 millions de morts ; <b>génocide arménien</b> (1915).</p>
+</div></details>
+
+<details id="m2" class="s-violet"><summary><span class="ico">2</span>Entre-deux-guerres : totalitarismes<span class="cv">›</span></summary><div class="sec">
+  <p><span class="date">1929</span> krach boursier → crise mondiale, chômage, montée des extrêmes.</p>
+  <div class="def"><b>Totalitarisme</b> : l'État contrôle tout (parti unique, propagande, terreur).</div>
+  <ul><li><b>URSS de Staline</b> : collectivisation, goulag, Grande Terreur</li><li><b>Allemagne nazie</b> : Hitler <span class="date">1933</span>, racisme, antisémitisme (lois de Nuremberg 1935)</li></ul>
+</div></details>
+
+<details id="m3" class="s-rouge"><summary><span class="ico">3</span>1939-45 : 2ᵈᵉ Guerre &amp; génocides<span class="cv">›</span></summary><div class="sec">
+  <ul><li><span class="date">1939</span> invasion Pologne · <span class="date">18 juin 1940</span> appel de De Gaulle</li><li><span class="date">6 juin 1944</span> débarquement · <span class="date">8 mai 1945</span> victoire en Europe</li></ul>
+  <div class="def">Une <b>guerre d'anéantissement</b> : ≈ 50-60 millions de morts, surtout des civils.</div>
+  <p><b>Shoah</b> : génocide des Juifs (≈ 6 millions) et des Tsiganes. France : <b>Vichy</b> (collaboration) vs <b>Résistance</b>.</p>
+</div></details>
+
+<details id="m4" class="s-bleu"><summary><span class="ico">4</span>Guerre froide &amp; décolonisation<span class="cv">›</span></summary><div class="sec">
+  <div class="def"><b>Guerre froide</b> (1947-1991) : affrontement indirect USA (Ouest) ↔ URSS (Est), sans guerre directe.</div>
+  <ul><li>Berlin : mur en <span class="date">1961</span>, chute en <span class="date">1989</span> · fin URSS <span class="date">1991</span></li><li>Décolonisation : Inde <span class="date">1947</span>, Afrique ~1960, <b>guerre d'Algérie</b> <span class="date">1954-1962</span></li></ul>
+</div></details>
+
+<details id="m5" class="s-violet"><summary><span class="ico">5</span>Vᵉ République &amp; Europe<span class="cv">›</span></summary><div class="sec">
+  <ul><li><span class="date">1958</span> De Gaulle fonde la Vᵉ République · <span class="date">1962</span> Président élu au suffrage universel</li><li><span class="date">1957</span> CEE → <span class="date">1992</span> UE (Maastricht) → <span class="date">2002</span> euro</li></ul>
+  <p>Trente Glorieuses (~1945-1975) : croissance &amp; consommation de masse.</p>
+</div></details>
+
+<details id="m6" class="s-vert"><summary><span class="ico">6</span>Géo : aires urbaines &amp; espaces productifs<span class="cv">›</span></summary><div class="sec">
+  <div class="def"><b>Aire urbaine</b> = ville-centre + banlieue + couronne périurbaine.</div>
+  <ul><li><b>Métropolisation</b> &amp; étalement urbain</li><li>Espaces productifs : agricoles, industriels, de services (tourisme : 1ᵉʳ pays visité)</li><li>Espaces de faible densité : campagnes, montagnes</li></ul>
+</div></details>
+
+<details id="m7" class="s-orange"><summary><span class="ico">7</span>Géo : France, UE &amp; mondialisation<span class="cv">›</span></summary><div class="sec">
+  <ul><li>France = métropole + <b>DROM</b> (Guadeloupe, Martinique, Guyane, La Réunion, Mayotte)</li><li>2ᵉ espace maritime mondial</li></ul>
+  <div class="def"><b>Mondialisation</b> : mise en relation du monde par des flux (marchandises, hommes, capitaux, infos).</div>
+  <p>Acteurs : firmes transnationales, États, ONG · métropoles mondiales. France : francophonie, ONU, UE.</p>
+</div></details>
+
+<details id="m8" class="s-rose"><summary><span class="ico">8</span>EMC : République &amp; citoyenneté<span class="cv">›</span></summary><div class="sec">
+  <ul><li>Devise <b>Liberté, Égalité, Fraternité</b> · Marianne, drapeau, Marseillaise, <span class="date">14 juillet</span></li>
+    <li><b>Laïcité</b> (loi <span class="date">1905</span>) · République indivisible, laïque, démocratique, sociale</li>
+    <li>Citoyen : <b>droits</b> (voter à 18 ans) &amp; <b>devoirs</b> (loi, impôt, défense)</li>
+    <li>Institutions : Président, gouvernement, Parlement, justice</li></ul>
+</div></details>
+
+<details id="mm" class="s-air"><summary><span class="ico">★</span>Méthodes de l'épreuve<span class="cv">›</span></summary><div class="sec">
+  <h3 class="blk"><span class="dot"></span>Analyser un document</h3>
+  <p>1) Présenter (nature, auteur, date) · 2) Prélever les infos (citer) · 3) Expliquer avec ses connaissances.</p>
+  <h3 class="blk"><span class="dot"></span>Développement construit</h3>
+  <p>Intro → 2-3 paragraphes (1 idée + exemples précis : dates, lieux, acteurs) → conclusion.</p>
+  <div class="ok">✔ Réponds à la consigne précise, pas tout le cours. Saute des lignes entre paragraphes.</div>
+</div></details>
+
+<details id="mp" class="s-cyan"><summary><span class="ico">📅</span>Planning J-15 → jour J<span class="cv">›</span></summary><div class="sec">
+  <div class="day"><div class="pin j1"><span class="big">J-15</span><span class="sm">→J-13</span></div><div class="dc"><b>Les guerres mondiales</b> <span class="meta">fiches 1–3</span></div></div>
+  <div class="day"><div class="pin j2"><span class="big">J-12</span><span class="sm">→J-10</span></div><div class="dc"><b>Guerre froide → aujourd'hui</b> <span class="meta">fiches 4–5</span></div></div>
+  <div class="day"><div class="pin j3"><span class="big">J-9</span><span class="sm">→J-7</span></div><div class="dc"><b>Géographie</b> <span class="meta">fiches 6–7</span></div></div>
+  <div class="day"><div class="pin j4"><span class="big">J-6</span><span class="sm">→J-4</span></div><div class="dc"><b>EMC &amp; méthodes</b> <span class="meta">fiche 8 + méthodes</span></div></div>
+  <div class="day"><div class="pin j5"><span class="big">J-3</span><span class="sm">→J-2</span></div><div class="dc"><b>Révision active</b> — refais le QCM + la frise des dates</div></div>
+  <div class="day"><div class="pin jd"><span class="big">J-1</span><span class="sm">veille</span></div><div class="dc"><b>Antisèche</b> — relis les repères, couche-toi tôt 🌙</div></div>
+  <div class="ok">✔ Fabrique une frise et récite-la dans l'ordre. Une date = un mot-clé.</div>
+</div></details>
+
+<details id="mq" class="s-rose"><summary><span class="ico">❓</span>QCM d'auto-évaluation<span class="cv">›</span></summary><div class="sec">
+  <div class="q"><div class="qq"><span class="qn">1</span>L'armistice de 1918 :</div><label><input type="radio" name="q1">1917</label><label><input type="radio" name="q1">11 nov. 1918</label></div>
+  <div class="q"><div class="qq"><span class="qn">2</span>Hitler au pouvoir en :</div><label><input type="radio" name="q2">1933</label><label><input type="radio" name="q2">1939</label></div>
+  <div class="q"><div class="qq"><span class="qn">3</span>La Shoah = génocide :</div><label><input type="radio" name="q3">des Juifs</label><label><input type="radio" name="q3">des Arméniens</label></div>
+  <div class="q"><div class="qq"><span class="qn">4</span>L'appel du 18 juin 1940 :</div><label><input type="radio" name="q4">Pétain</label><label><input type="radio" name="q4">De Gaulle</label></div>
+  <div class="q"><div class="qq"><span class="qn">5</span>La guerre froide oppose les USA à :</div><label><input type="radio" name="q5">l'URSS</label><label><input type="radio" name="q5">la Chine</label></div>
+  <div class="q"><div class="qq"><span class="qn">6</span>La Vᵉ République est fondée en :</div><label><input type="radio" name="q6">1958</label><label><input type="radio" name="q6">1945</label></div>
+  <div class="q"><div class="qq"><span class="qn">7</span>La loi de laïcité date de :</div><label><input type="radio" name="q7">1905</label><label><input type="radio" name="q7">1789</label></div>
+  <div class="q"><div class="qq"><span class="qn">8</span>« DROM » =</div><label><input type="radio" name="q8">régions d'outre-mer</label><label><input type="radio" name="q8">un traité</label></div>
+  <details class="reveal"><summary>👁️ Afficher le corrigé</summary><div class="corr"><b>1.</b> 11 nov. 1918 · <b>2.</b> 1933 · <b>3.</b> des Juifs · <b>4.</b> De Gaulle · <b>5.</b> l'URSS · <b>6.</b> 1958 · <b>7.</b> 1905 · <b>8.</b> régions d'outre-mer.</div></details>
+  <div class="ok" style="margin-top:10px;">✔ 7–8 : au top 🎉 · 4–6 : revois les fiches · &lt;4 : refais la frise.</div>
+</div></details>
+
+</main>
+
+<script>
+  if (window.navigator.standalone === true || (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches)) { var b=document.getElementById('install'); if(b) b.style.display='none'; }
+</script>
+<footer>📲 <b>Partager → « Sur l'écran d'accueil »</b> pour l'installer · #AIRHEAD4LIFE 🦸<br><a class="top" href="#">↑ Haut</a></footer>
+</body>
+</html>
