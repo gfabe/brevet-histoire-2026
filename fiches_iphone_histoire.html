@@ -65,6 +65,20 @@
   .reveal summary{ padding:10px 0; font-size:14px; color:#fbbf24;} .corr{ background:linear-gradient(120deg,#064e3b,#065f46); border-radius:12px; padding:11px 14px; color:#fff; font-size:13.5px;}
   footer{ text-align:center; color:var(--mut); font-size:12px; padding:24px 16px;} footer b{color:#fcd34d;} a.top{ color:var(--bleu); text-decoration:none;}
 </style>
+
+<style id="qcm-badges-css">
+#mq .qscore{margin:12px 0 6px;padding:10px 12px;border-radius:14px;background:rgba(244,114,182,.12);border:1px solid rgba(244,114,182,.4);font-size:14px;text-align:center}
+#mq .qscore .bar{height:8px;border-radius:6px;background:rgba(148,163,184,.25);margin-top:7px;overflow:hidden}
+#mq .qscore .bar i{display:block;height:100%;width:0;border-radius:6px;background:linear-gradient(90deg,#f472b6,#a855f7);transition:width .35s}
+#mq .badges{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 2px}
+#mq .bdg{flex:1 1 30%;min-width:96px;display:flex;flex-direction:column;align-items:center;gap:2px;padding:9px 6px;border-radius:14px;background:rgba(148,163,184,.12);border:1px solid rgba(148,163,184,.28);opacity:.45;filter:grayscale(1);transition:.25s;font-size:24px;line-height:1.1}
+#mq .bdg span{font-size:12px;font-weight:800}
+#mq .bdg i{font-size:10px;opacity:.75;font-style:normal;text-align:center}
+#mq .bdg.earned{opacity:1;filter:none;background:rgba(34,197,94,.16);border-color:rgba(34,197,94,.55);box-shadow:0 6px 18px rgba(34,197,94,.22);transform:translateY(-2px)}
+#mq .bdg.earned.hero{background:rgba(168,85,247,.18);border-color:rgba(168,85,247,.6);box-shadow:0 6px 20px rgba(168,85,247,.28)}
+#mq .q.gd label:has(input[data-ok]){background:rgba(34,197,94,.16);border-color:rgba(34,197,94,.55)}
+#mq .q.bd label.pick{background:rgba(239,68,68,.16);border-color:rgba(239,68,68,.5)}
+</style>
 </head>
 <body>
 
@@ -174,24 +188,51 @@
 </div></details>
 
 <details id="mq" class="s-rose"><summary><span class="ico">❓</span>QCM d'auto-évaluation<span class="cv">›</span></summary><div class="sec">
-  <div class="q"><div class="qq"><span class="qn">1</span>L'armistice de 1918 :</div><label><input type="radio" name="q1">1917</label><label><input type="radio" name="q1">11 nov. 1918</label></div>
-  <div class="q"><div class="qq"><span class="qn">2</span>Hitler au pouvoir en :</div><label><input type="radio" name="q2">1933</label><label><input type="radio" name="q2">1939</label></div>
-  <div class="q"><div class="qq"><span class="qn">3</span>La Shoah = génocide :</div><label><input type="radio" name="q3">des Juifs</label><label><input type="radio" name="q3">des Arméniens</label></div>
-  <div class="q"><div class="qq"><span class="qn">4</span>L'appel du 18 juin 1940 :</div><label><input type="radio" name="q4">Pétain</label><label><input type="radio" name="q4">De Gaulle</label></div>
-  <div class="q"><div class="qq"><span class="qn">5</span>La guerre froide oppose les USA à :</div><label><input type="radio" name="q5">l'URSS</label><label><input type="radio" name="q5">la Chine</label></div>
-  <div class="q"><div class="qq"><span class="qn">6</span>La Vᵉ République est fondée en :</div><label><input type="radio" name="q6">1958</label><label><input type="radio" name="q6">1945</label></div>
-  <div class="q"><div class="qq"><span class="qn">7</span>La loi de laïcité date de :</div><label><input type="radio" name="q7">1905</label><label><input type="radio" name="q7">1789</label></div>
-  <div class="q"><div class="qq"><span class="qn">8</span>« DROM » =</div><label><input type="radio" name="q8">régions d'outre-mer</label><label><input type="radio" name="q8">un traité</label></div>
-    <div class="q"><div class="qq"><span class="qn">9</span>La Première Guerre mondiale commence en :</div><label><input type="radio" name="q9">1914</label><label><input type="radio" name="q9">1918</label></div>
-    <div class="q"><div class="qq"><span class="qn">10</span>La bataille de Verdun :</div><label><input type="radio" name="q10">1918</label><label><input type="radio" name="q10">1916</label></div>
-    <div class="q"><div class="qq"><span class="qn">11</span>Le Front populaire (congés payés) :</div><label><input type="radio" name="q11">1936</label><label><input type="radio" name="q11">1945</label></div>
-    <div class="q"><div class="qq"><span class="qn">12</span>Le régime de Vichy est dirigé par :</div><label><input type="radio" name="q12">De Gaulle</label><label><input type="radio" name="q12">Pétain</label></div>
-    <div class="q"><div class="qq"><span class="qn">13</span>La chute du mur de Berlin :</div><label><input type="radio" name="q13">1989</label><label><input type="radio" name="q13">1961</label></div>
-    <div class="q"><div class="qq"><span class="qn">14</span>Le traité de Rome (CEE) :</div><label><input type="radio" name="q14">1992</label><label><input type="radio" name="q14">1957</label></div>
-    <div class="q"><div class="qq"><span class="qn">15</span>Droit de vote des femmes en France :</div><label><input type="radio" name="q15">1944</label><label><input type="radio" name="q15">1918</label></div>
-    <div class="q"><div class="qq"><span class="qn">16</span>L'ONU est créée en :</div><label><input type="radio" name="q16">1919</label><label><input type="radio" name="q16">1945</label></div>
-  <details class="reveal"><summary>👁️ Afficher le corrigé</summary><div class="corr"><b>1.</b> 11 nov. 1918 · <b>2.</b> 1933 · <b>3.</b> des Juifs · <b>4.</b> De Gaulle · <b>5.</b> l'URSS · <b>6.</b> 1958 · <b>7.</b> 1905 · <b>8.</b> régions d'outre-mer. · <b>9.</b> 1914 · <b>10.</b> 1916 · <b>11.</b> 1936 · <b>12.</b> Pétain · <b>13.</b> 1989 · <b>14.</b> 1957 · <b>15.</b> 1944 · <b>16.</b> 1945.</div></details>
-  <div class="ok" style="margin-top:10px;">✔ 14–16 : au top 🎉 · 8–13 : revois les fiches · &lt;8 : refais la frise.</div>
+  <div class="q"><div class="qq"><span class="qn">1</span>L'armistice de la 1ᵉʳ Guerre mondiale :</div><label><input type="radio" name="q1">1917</label><label><input type="radio" name="q1" data-ok="1">11 nov. 1918</label><label><input type="radio" name="q1">1919</label></div>
+  <div class="q"><div class="qq"><span class="qn">2</span>La Révolution russe a lieu en :</div><label><input type="radio" name="q2">1905</label><label><input type="radio" name="q2" data-ok="1">1917</label><label><input type="radio" name="q2">1929</label></div>
+  <div class="q"><div class="qq"><span class="qn">3</span>Hitler arrive au pouvoir en :</div><label><input type="radio" name="q3" data-ok="1">1933</label><label><input type="radio" name="q3">1939</label><label><input type="radio" name="q3">1945</label></div>
+  <div class="q"><div class="qq"><span class="qn">4</span>La Shoah désigne le génocide :</div><label><input type="radio" name="q4">des Arméniens</label><label><input type="radio" name="q4" data-ok="1">des Juifs</label><label><input type="radio" name="q4">des Tsiganes</label></div>
+  <div class="q"><div class="qq"><span class="qn">5</span>L'appel à résister du 18 juin 1940 est lancé par :</div><label><input type="radio" name="q5">Pétain</label><label><input type="radio" name="q5" data-ok="1">De Gaulle</label><label><input type="radio" name="q5">J. Moulin</label></div>
+  <div class="q"><div class="qq"><span class="qn">6</span>Le débarquement de Normandie :</div><label><input type="radio" name="q6">8 mai 1945</label><label><input type="radio" name="q6" data-ok="1">6 juin 1944</label><label><input type="radio" name="q6">1940</label></div>
+  <div class="q"><div class="qq"><span class="qn">7</span>La guerre froide oppose les USA à :</div><label><input type="radio" name="q7">l'Allemagne</label><label><input type="radio" name="q7" data-ok="1">l'URSS</label><label><input type="radio" name="q7">la Chine</label></div>
+  <div class="q"><div class="qq"><span class="qn">8</span>La guerre d'Algérie se termine en :</div><label><input type="radio" name="q8">1954</label><label><input type="radio" name="q8" data-ok="1">1962</label><label><input type="radio" name="q8">1968</label></div>
+  <div class="q"><div class="qq"><span class="qn">9</span>La Vᵉ République est fondée en :</div><label><input type="radio" name="q9">1945</label><label><input type="radio" name="q9" data-ok="1">1958</label><label><input type="radio" name="q9">1981</label></div>
+  <div class="q"><div class="qq"><span class="qn">10</span>La loi de séparation des Églises et de l'État (laïcité) :</div><label><input type="radio" name="q10">1789</label><label><input type="radio" name="q10" data-ok="1">1905</label><label><input type="radio" name="q10">1958</label></div>
+  <div class="q"><div class="qq"><span class="qn">11</span>Une aire urbaine comprend la ville-centre, la banlieue et :</div><label><input type="radio" name="q11" data-ok="1">la couronne périurbaine</label><label><input type="radio" name="q11">la campagne isolée</label><label><input type="radio" name="q11">la montagne</label></div>
+  <div class="q"><div class="qq"><span class="qn">12</span>« DROM » désigne :</div><label><input type="radio" name="q12" data-ok="1">des régions d'outre-mer</label><label><input type="radio" name="q12">un traité</label><label><input type="radio" name="q12">une métropole</label></div>
+  <div class="q"><div class="qq"><span class="qn">13</span>La Première Guerre mondiale commence en :</div><label><input type="radio" name="q13" data-ok="1">1914</label><label><input type="radio" name="q13">1918</label><label><input type="radio" name="q13">1939</label></div>
+  <div class="q"><div class="qq"><span class="qn">14</span>La bataille de Verdun :</div><label><input type="radio" name="q14" data-ok="1">1916</label><label><input type="radio" name="q14">1918</label><label><input type="radio" name="q14">1940</label></div>
+  <div class="q"><div class="qq"><span class="qn">15</span>Le Front populaire (congés payés) :</div><label><input type="radio" name="q15" data-ok="1">1936</label><label><input type="radio" name="q15">1945</label><label><input type="radio" name="q15">1958</label></div>
+  <div class="q"><div class="qq"><span class="qn">16</span>Le régime de Vichy est dirigé par :</div><label><input type="radio" name="q16">De Gaulle</label><label><input type="radio" name="q16" data-ok="1">Pétain</label><label><input type="radio" name="q16">Clemenceau</label></div>
+  <div class="q"><div class="qq"><span class="qn">17</span>La chute du mur de Berlin :</div><label><input type="radio" name="q17">1961</label><label><input type="radio" name="q17" data-ok="1">1989</label><label><input type="radio" name="q17">1991</label></div>
+  <div class="q"><div class="qq"><span class="qn">18</span>Le traité de Rome (CEE) :</div><label><input type="radio" name="q18" data-ok="1">1957</label><label><input type="radio" name="q18">1992</label><label><input type="radio" name="q18">2002</label></div>
+  <div class="q"><div class="qq"><span class="qn">19</span>Droit de vote des femmes en France :</div><label><input type="radio" name="q19" data-ok="1">1944</label><label><input type="radio" name="q19">1918</label><label><input type="radio" name="q19">1962</label></div>
+  <div class="q"><div class="qq"><span class="qn">20</span>L'ONU est créée en :</div><label><input type="radio" name="q20">1919</label><label><input type="radio" name="q20" data-ok="1">1945</label><label><input type="radio" name="q20">1948</label></div>
+  <div class="q"><div class="qq"><span class="qn">21</span>La Déclaration des droits de l'homme et du citoyen :</div><label><input type="radio" name="q21" data-ok="1">1789</label><label><input type="radio" name="q21">1848</label><label><input type="radio" name="q21">1905</label></div>
+  <div class="q"><div class="qq"><span class="qn">22</span>Le président de la Vᵉ République est élu pour :</div><label><input type="radio" name="q22" data-ok="1">5 ans</label><label><input type="radio" name="q22">7 ans</label><label><input type="radio" name="q22">4 ans</label></div>
+  <div class="q"><div class="qq"><span class="qn">23</span>La plus grande aire urbaine de France :</div><label><input type="radio" name="q23">Lyon</label><label><input type="radio" name="q23" data-ok="1">Paris</label><label><input type="radio" name="q23">Marseille</label></div>
+  <div class="q"><div class="qq"><span class="qn">24</span>La devise de la République :</div><label><input type="radio" name="q24" data-ok="1">Liberté, Égalité, Fraternité</label><label><input type="radio" name="q24">Travail, Famille, Patrie</label><label><input type="radio" name="q24">Un pour tous</label></div>
+  <div class="q"><div class="qq"><span class="qn">25</span>🔥 Le génocide arménien a lieu pendant :</div><label><input type="radio" name="q25" data-ok="1">la 1ʳᵉ Guerre mondiale</label><label><input type="radio" name="q25">la 2ᵈᵉ Guerre mondiale</label><label><input type="radio" name="q25">la guerre froide</label></div>
+  <div class="q"><div class="qq"><span class="qn">26</span>🔥 Les « Trente Glorieuses » désignent :</div><label><input type="radio" name="q26" data-ok="1">1945–1975 (forte croissance)</label><label><input type="radio" name="q26">1914–1945</label><label><input type="radio" name="q26">les 30 ans de la Vᵉ Rép.</label></div>
+  <div class="q"><div class="qq"><span class="qn">27</span>🔥 Le NSDAP est le parti :</div><label><input type="radio" name="q27">communiste soviétique</label><label><input type="radio" name="q27" data-ok="1">nazi (Hitler)</label><label><input type="radio" name="q27">fasciste italien</label></div>
+  <div class="q"><div class="qq"><span class="qn">28</span>🔥 La crise des missiles de Cuba :</div><label><input type="radio" name="q28" data-ok="1">1962</label><label><input type="radio" name="q28">1945</label><label><input type="radio" name="q28">1989</label></div>
+  <div class="q"><div class="qq"><span class="qn">29</span>🔥 La Vᵉ République donne un pouvoir fort :</div><label><input type="radio" name="q29">au Parlement</label><label><input type="radio" name="q29" data-ok="1">au Président</label><label><input type="radio" name="q29">aux régions</label></div>
+  <div class="q"><div class="qq"><span class="qn">30</span>🔥 La décolonisation de l'Afrique a lieu surtout vers :</div><label><input type="radio" name="q30">1920</label><label><input type="radio" name="q30" data-ok="1">1960</label><label><input type="radio" name="q30">1990</label></div>
+  <div class="q"><div class="qq"><span class="qn">31</span>🔥 Une métropole mondiale se distingue par :</div><label><input type="radio" name="q31" data-ok="1">sa fonction de commandement</label><label><input type="radio" name="q31">sa seule population</label><label><input type="radio" name="q31">son altitude</label></div>
+  <div class="q"><div class="qq"><span class="qn">32</span>🔥 L'euro (pièces et billets) entre en circulation en :</div><label><input type="radio" name="q32">1992</label><label><input type="radio" name="q32" data-ok="1">2002</label><label><input type="radio" name="q32">2016</label></div>
+
+  <div class="qscore" id="qstat">Réponds aux questions pour gagner des badges ! <span id="qnums"></span>
+    <div class="bar"><i id="qbar"></i></div></div>
+  <div class="badges">
+    <div class="bdg" data-b="b8">🥉<span>Échauffement</span><i>8 réponses</i></div>
+    <div class="bdg" data-b="b16">🥈<span>En forme</span><i>16 réponses</i></div>
+    <div class="bdg" data-b="ball">🥇<span>Marathon</span><i>les 32 !</i></div>
+    <div class="bdg" data-b="s75">🔥<span>Solide</span><i>≥ 75 % justes</i></div>
+    <div class="bdg" data-b="exp">⭐<span>Expert</span><i>≥ 90 % justes</i></div>
+    <div class="bdg hero" data-b="hero">🦸<span>AIRHEAD4LIFE</span><i>tout + ≥ 90 %</i></div>
+  </div>
+  <details class="reveal"><summary>👁️ Afficher le corrigé</summary><div class="corr"><b>1.</b> 11 nov. 1918 · <b>2.</b> 1917 · <b>3.</b> 1933 · <b>4.</b> des Juifs · <b>5.</b> De Gaulle · <b>6.</b> 6 juin 1944 · <b>7.</b> l'URSS · <b>8.</b> 1962 · <b>9.</b> 1958 · <b>10.</b> 1905 · <b>11.</b> la couronne périurbaine · <b>12.</b> des régions d'outre-mer · <b>13.</b> 1914 · <b>14.</b> 1916 · <b>15.</b> 1936 · <b>16.</b> Pétain · <b>17.</b> 1989 · <b>18.</b> 1957 · <b>19.</b> 1944 · <b>20.</b> 1945 · <b>21.</b> 1789 · <b>22.</b> 5 ans · <b>23.</b> Paris · <b>24.</b> Liberté, Égalité, Fraternité · <b>25.</b> la 1ʳᵉ Guerre mondiale · <b>26.</b> 1945–1975 (forte croissance) · <b>27.</b> nazi (Hitler) · <b>28.</b> 1962 · <b>29.</b> au Président · <b>30.</b> 1960 · <b>31.</b> sa fonction de commandement · <b>32.</b> 2002.</div></details>
+  ✔ 28–32 : au top 🎉 · 16–27 : revois les fiches · &lt;16 : refais la frise.</div>
 </div></details>
 
 </main>
@@ -200,5 +241,29 @@
   if (window.navigator.standalone === true || (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches)) { var b=document.getElementById('install'); if(b) b.style.display='none'; }
 </script>
 <footer>📲 <b>Partager → « Sur l'écran d'accueil »</b> pour l'installer · #AIRHEAD4LIFE 🦸<br><a class="top" href="#">↑ Haut</a></footer>
+
+<script>
+(function(){
+ var root=document.getElementById('mq'); if(!root) return;
+ var qs=[].slice.call(root.querySelectorAll('.q'));
+ var total=qs.length, stat=document.getElementById('qnums'), bar=document.getElementById('qbar');
+ function up(){
+  var a=0,c=0;
+  qs.forEach(function(q){
+   var sel=q.querySelector('input:checked');
+   q.classList.remove('gd','bd');
+   q.querySelectorAll('label').forEach(function(l){l.classList.remove('pick');});
+   if(sel){a++; var ok=sel.hasAttribute('data-ok'); if(ok)c++;
+     q.classList.add(ok?'gd':'bd'); sel.closest('label').classList.add('pick');}
+  });
+  var p=a?Math.round(c/a*100):0;
+  stat.innerHTML=' — <b>'+a+'/'+total+'</b> répondues · <b>'+c+'</b> justes · <b>'+p+'%</b>';
+  bar.style.width=(a/total*100)+'%';
+  var cond={b8:a>=8,b16:a>=16,ball:a>=total,s75:a>=8&&p>=75,exp:a>=16&&p>=90,hero:a>=total&&p>=90};
+  document.querySelectorAll('#mq .bdg').forEach(function(b){b.classList.toggle('earned',!!cond[b.dataset.b]);});
+ }
+ root.addEventListener('change',up); up();
+})();
+</script>
 </body>
 </html>
